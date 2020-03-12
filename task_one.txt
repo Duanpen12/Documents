@@ -36,3 +36,7 @@ Make a change to your file with a git hosting tool and commit
 Create a "branch" (version), make a change, commit the change
 Open a "pull request" (propose changes to the master branch)
 "Merge" your branch to the master branch
+
+
+Git Checkout
+เป็นคำสั่งที่ใช้ในการสลับ Working Directory ไปยัง Branch หรือ Commit ที่เราระบุ คำสั่งนี้ยังสามารถให้งานได้ในอีกหลายๆ แบบ
