@@ -40,3 +40,23 @@ Open a "pull request" (propose changes to the master branch)
 
 Git Checkout
 เป็นคำสั่งที่ใช้ในการสลับ Working Directory ไปยัง Branch หรือ Commit ที่เราระบุ คำสั่งนี้ยังสามารถให้งานได้ในอีกหลายๆ แบบ
+
+
+Git Push
+เป็นคำสั่งที่ใช้ส่งการเปลี่ยนแปลงของ Source Code ที่เก็บอยู่บน Local Repository ขึ้นไปยัง Remote Repository
+#ส่งการเปลี่ยนแปลง Branch master ไปยัง Remote ที่ชื่อ origin
+$git push origin master 
+Git Fetch
+เป็นคำสั่งที่ใช้รับการเปลี่ยนแปลงของ Source Code ล่าสุดที่อยู่บน Remote Repository ลงมายัง Local Repository แต่ยังไม่ได้ทำการรวม Source Code (Merge)
+#รับการเปลี่ยนแปลงทุก Branch จาก Remote Repository
+$git fetch --all
+#รับการเปลี่ยนแปลง Branch master จาก Remote Repository ที่ชื่อ origin
+$git fetch origin master
+Git Pull [fetch + merge]
+เป็นคำสั่งที่ใช้รับการเปลี่ยนแปลงของ Source Code ล่าสุดที่อยู่บน Remote Repository ลงมายัง Local Repository และทำการ Auto Merge
+$git pull <remote> <branch>
+$git pull origin master
+Git Clone
+เป็นคำสั่งที่ใช้ดึงประวัติทั้งหมดบน Remote Repository ของเพื่อนร่วมทีม ของคนอื่นหรือของเราเองที่มีอยู่แล้วบน Git Hosting มาที่เครื่องของเรา คำสั่งนี้จะคล้ายๆ Git Init ที่ใช้สร้างระบบ Git ขึ้นมาตอนเริ่มต้น แต่เราจะได้ประวัติเดิมของ Repository มาด้วย ทำให้เราเริ่มพัฒนาต่อจากตรงจุดนี้ได้เลย
+$git clone https://github.com/NewGame0/Android_HelloWorld.git
+คำสั่ง Git Clone นั้นจะ Checkout Branch หลักมาเป็น Master และดึง Tag ลงมาทั้งหมด
